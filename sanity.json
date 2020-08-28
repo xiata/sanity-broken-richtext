@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "project": {
+    "name": "omitted"
+  },
+  "api": {
+    "projectId": "omitted",
+    "dataset": "omitted"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "asset-source-cloudinary",
+    "@sanity/color-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

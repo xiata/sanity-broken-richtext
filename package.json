@@ -1,0 +1,108 @@
+{
+  "name": "sanity-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "dev@localhost",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prod": "SANITY_STUDIO_API_DATASET=production sanity start",
+    "start": "SANITY_STUDIO_API_DATASET=dev sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@sanity/base": "^1.150.3",
+    "@sanity/color-input": "^1.150.1",
+    "@sanity/components": "^1.150.3",
+    "@sanity/core": "^1.150.3",
+    "@sanity/default-layout": "^1.150.3",
+    "@sanity/default-login": "^1.150.1",
+    "@sanity/desk-tool": "^1.150.4",
+    "@sanity/vision": "^1.150.1",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "caniuse-lite": "^1.0.30001107",
+    "contentful": "^7.14.6",
+    "memoize-one": "^5.1.1",
+    "prop-types": "^15.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.2",
+    "sanity-plugin-asset-source-cloudinary": "^0.1.0",
+    "webpack": "^4.44.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-export-namespace-from",
+      "@babel/plugin-proposal-nullish-coalescing-operator",
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-proposal-optional-chaining",
+      "inline-react-svg"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "ie 11"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "env": {
+      "es6": true,
+      "node": true,
+      "shared-node-browser": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "comma-style": [
+        "error",
+        "last"
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "never"
+        }
+      ],
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "semi": "error"
+    },
+    "globals": {
+      "React": "writable",
+      "fetch": true
+    }
+  }
+}
