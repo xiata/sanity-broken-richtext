@@ -37,8 +37,10 @@ Foo Bar document, reload page, etc).
 3. Go to that Foo Bar document you created. Notice it has marked the content as invalid.
 4. Go through the song and dance of removing multiple invalid values (wat).
 5. Change the text to something valid. DO NOT PUBLISH.
-6. Click on the Rich Text Content Item, then go back to your Foo Bar document.
-7. Notice no error, that's ok.
-8. In the dropdown next to the publish button, Discard Changes.
-9. Confirm, and watch Desk crash.
-10. Retry or reload the page and it's happy again, but back in the broken state at step 3.
+6. Copy and paste some paragraphs from baconipsum.com into the Foo Bar document. Notice the fail to
+validate warning, and that it won't paste at all. paste or shift-pasted.
+7. Click on the Rich Text Content Item, then go back to your Foo Bar document.
+8. Notice no error, that's ok.
+9. In the dropdown next to the publish button, Discard Changes.
+10. Confirm, and watch Desk crash.
+11. Retry or reload the page and it's happy again, but back in the broken state at step 3.
